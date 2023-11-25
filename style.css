@@ -9,3 +9,88 @@ body {
     font-size: 15px;
     font-family: 'Spartan', sans-serif;
 }
+main {
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    width: 80%;
+}
+header {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+header p {
+    padding-top: 10px;
+}
+.Rate {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.Rate article {
+    background-color: hsl(300, 24%, 96%);
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    width: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.Rate img {
+    padding-left: 2px;
+}
+#one {
+    align-self: flex-start;
+}
+#two {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    align-self: center;
+}
+#three {
+    align-self: flex-end;
+}
+.Review {
+    margin-top: 10px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width: 100%;
+    height: 120%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.Review article {
+    background-color: hsl(300, 43%, 22%);
+    padding: 15px;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+
+}
+.Review img {
+    width: 40px;
+    border-radius: 50%;
+}
+#four {
+    align-self: flex-start;
+}
+#five {
+    align-self: center;
+}
+#six {
+    align-self: flex-end;
+}
