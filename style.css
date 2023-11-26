@@ -8,6 +8,17 @@
 body {
     font-size: 15px;
     font-family: 'Spartan', sans-serif;
+    color: hsl(300, 43%, 22%);
+}
+.top-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.bottom-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 main {
     position: fixed;
@@ -19,7 +30,8 @@ main {
     grid-template-rows: auto auto;
     width: 80%;
 }
-header {
+.header {
+    font-weight: 700;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -27,6 +39,7 @@ header {
 }
 header p {
     padding-top: 10px;
+    font-weight: 400;
 }
 .Rate {
     grid-column-start: 2;
@@ -46,9 +59,11 @@ header p {
     width: 80%;
     display: flex;
     justify-content: space-evenly;
+    font-weight: 700;
 }
 .Rate img {
     padding-left: 2px;
+
 }
 #one {
     align-self: flex-start;
@@ -62,6 +77,7 @@ header p {
     align-self: flex-end;
 }
 .Review {
+    color: hsl(0, 0%, 100%);
     margin-top: 10px;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -71,19 +87,32 @@ header p {
     height: 120%;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: space-between;
 }
 .Review article {
     background-color: hsl(300, 43%, 22%);
-    padding: 15px;
+    padding: 30px;
     border-radius: 10px;
-    width: fit-content;
+    width: calc(90%/3);
     height: fit-content;
+    display: flex;
+    flex-direction: column;
+    
 
+}
+.Review header {
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+    padding-bottom: 20px;
 }
 .Review img {
     width: 40px;
     border-radius: 50%;
+    margin-right: 10%;
+}
+.Review span {
+    color: hsl(303, 10%, 53%);
 }
 #four {
     align-self: flex-start;
@@ -93,4 +122,14 @@ header p {
 }
 #six {
     align-self: flex-end;
+}
+.Review p {
+    font-weight: 400;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    padding-bottom:20px ;
 }
