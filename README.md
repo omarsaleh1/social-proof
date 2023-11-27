@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Social-Proof Solution]()
 - Live Site URL: [Soical-Proof Site](https://omarsaleh1.github.io/Soical-Proof/)
+- Solution URL: [Social-Proof Solution](https://www.frontendmentor.io/solutions/socialproofsection-using-htmlandcss-78j5AHazQJ)
 
 ### Built with
 
